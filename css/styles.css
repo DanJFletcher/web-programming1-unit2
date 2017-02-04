@@ -102,8 +102,9 @@ http://codepen.io/joe-watkins/pen/nGaID
   height: 0;
   width: 100%;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   top: 47px;
+  text-transform: uppercase;
 }
 .mobile-nav ul {
   width: 100%;
@@ -148,6 +149,7 @@ Footer
 footer ul {
     list-style: none;
     text-align: center;
+    text-transform: uppercase;
 }
 
 footer ul li {
@@ -159,8 +161,7 @@ footer ul li a {
     color: #efe;
 }
 footer ul li a:hover {
-    color: #eee;
-    font-size: 19px;
+    color: #e8d7c4;
 }
 
 @media screen and (min-width: 460px) {
