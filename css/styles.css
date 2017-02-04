@@ -1,0 +1,82 @@
+/*
+
+Base styles
+
+*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+/* 
+
+navigation:
+modified from
+http://codepen.io/joe-watkins/pen/nGaID 
+
+*/
+.mobile-nav-bar {
+  background: #333;
+  min-height: 47px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  z-index: 20;
+}
+.mobile-nav-bar .mobile-nav-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+  width: 31px;
+  height: 30px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.mobile-nav-bar .mobile-nav-button .bar {
+  width: 100%;
+  float: left;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+.mobile-nav-bar .mobile-nav-button .bar:last-of-type {
+  margin-bottom: 0;
+}
+
+.mobile-nav {
+  height: 0;
+  z-index: 10;
+}
+.mobile-nav ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  transform: translate(0, -300px);
+  -ms-transform: translate(0, -300px);
+  -webkit-transform: translate(0, -300px);
+  transition: all .2s ease-in-out;
+}
+.mobile-nav ul li a {
+  background: #222;
+  border-bottom: solid #555 1px;
+  color: white;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.mobile-nav ul li a:active {
+  background: maroon;
+}
+.mobile-nav.show-mobile-nav {
+  height: auto;
+}
+.mobile-nav.show-mobile-nav ul {
+  transform: translate(0px);
+  -ms-transform: translate(0px);
+  -webkit-transform: translate(0px);
+}
