@@ -9,6 +9,30 @@ body {
     margin: 0;
 }
 
+
+/*
+
+Hero styles
+
+*/
+.hero-container {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
 /* 
 
 navigation:
@@ -20,7 +44,7 @@ http://codepen.io/joe-watkins/pen/nGaID
   background: #333;
   min-height: 47px;
   width: 100%;
-  position: relative;
+  position: fixed;
   cursor: pointer;
   z-index: 20;
 }
@@ -49,7 +73,10 @@ http://codepen.io/joe-watkins/pen/nGaID
 
 .mobile-nav {
   height: 0;
+  width: 100%;
   z-index: 10;
+  position: absolute;
+  top: 47px;
 }
 .mobile-nav ul {
   width: 100%;
