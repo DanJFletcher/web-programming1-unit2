@@ -115,6 +115,9 @@ http://codepen.io/joe-watkins/pen/nGaID
 .mobile-nav ul li a:active {
   background: maroon;
 }
+.mobile-nav ul li a:hover {
+    background: #444;
+}
 .mobile-nav.show-mobile-nav {
   height: auto;
 }
