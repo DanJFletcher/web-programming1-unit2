@@ -69,6 +69,10 @@ Hero styles
     color: #efe;
 }
 
+.hero-container .message h1 {
+    font-size: 3em;
+}
+
 /* 
 
 Header styles 
